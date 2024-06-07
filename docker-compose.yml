@@ -1,0 +1,28 @@
+version: '2.4'
+
+services:
+  db:
+    image: postgres:16
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: 'birthday'
+      POSTGRES_USER: 'siteman'
+      POSTGRES_PASSWORD: '1234'
+
+  web:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      DB_HOST: db
+      DB_NAME: 'birthday'
+      DB_USER: 'siteman'
+      DB_PASSWORD: '1234'
+
+volumes:
+  postgres_data:
