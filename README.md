@@ -6,7 +6,7 @@
 
 Запуск проекта
 
-1. Клонируйте репозиторий
+1. Склонируйте репозиторий:
 git clone https://github.com/MihailAm/test_task.git
 2. Перейдите в директорию проекта:
 cd test_task
