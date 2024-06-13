@@ -48,9 +48,9 @@ http://localhost:8000/api/v1/subscribe/
 
 5.Но стоит удостоверится что cron работает
 
-Для этого в консоли стоит написать
+Для этого в консоли стоит написать:
 docker exec -it web service cron status 
-Если ответ failed стоит его перезапустить 
+Если ответ failed стоит его перезапустить: 
 docker exec -it web service cron restart
 
 Теперь проверяем письмо на почте
