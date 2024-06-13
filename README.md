@@ -56,7 +56,7 @@ docker exec -it web service cron restart
 Теперь проверяем письмо на почте
 
 6.Так же доступен и метод для отписки по адресу: 
-http://localhost:8000/api/v1/unsubscribe/<int:subscribed_to_id>'
+http://localhost:8000/api/v1/unsubscribe/<int:subscribed_to_id>
 
 Так же можно настроить за сколько дней, надо чтоб приходило оповещение о дне рождении для этого при подписки надо указать еще один параметр 
 {
